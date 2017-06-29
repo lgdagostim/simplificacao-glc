@@ -23,6 +23,6 @@ B->bDaA|bBBa|bDba|ba|b
 D->bB|Σ
 ```
 ---
-> Código escrito por **[LGDAGOSTIM](http://www.lgdagostim.tk "Acesse.")**.
+> Código escrito por **[LGDAGOSTIM](http://www.lgdagostim.tk "Acesse.")**.  
 > [fb.com/b1duu](https://www.facebook.com/b1duu "Perfil no Facebook")
 ---
