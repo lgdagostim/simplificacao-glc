@@ -3,7 +3,8 @@
 ##### Atividades desenvolvidas pelo código:
 - [x] Eliminação de produções vazias.  
 - [x] Eliminação de produções unitárias.  
-- [ ] Eliminação de símbolos inúteis:
+- [ ] Eliminação de símbolos inúteis
+    - Eliminação de símbolos inúteis não foi desenvolvida.
 ---
 ### Instruções:
 > Utilizar letras em maíusculo para **não terminais**;  
