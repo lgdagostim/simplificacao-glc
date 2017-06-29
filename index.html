@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trabalho de linguagens formais</title>
+    <link href="css/uikit.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div class="uk-container">
+        <form class="uk-grid-small uk-grid-divider uk-form-horizontal uk-margin-top" uk-grid id="glc">
+            <div class="uk-width-1-1 uk-form-stacked uk-margin-top">
+                <h2 class="uk-heading-divider uk-text-center uk-text-middle">Simplificação de GLC <span uk-icon="icon: code; ratio: 1.7"></span></h2>
+                <div class="uk-grid">
+                    <div class="uk-width-1-2">
+                        <label class="uk-form-label">Insira a gramática</label>
+                        <textarea class="uk-textarea res" rows="10" id="input-gramatica" placeholder="Digite a gramática" required></textarea>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <label class="uk-form-label ">Resultado</label>
+                        <textarea class="uk-textarea res" rows="10" id="input-resultado" readonly></textarea>
+                    </div>
+                </div>
+                <div class="uk-child-width-1-1 uk-margin-top">
+                    <div class="uk-alert-danger alert-danger" uk-alert id="alerta">
+                        <p>É necessário inserir uma gramática.</p>
+                    </div>
+                    <button class="uk-button uk-button-primary uk-width-auto" type="button" id="btn_add">Adicionar gramática</button>
+                    <button type="button" class="uk-button uk-button_default uk-width-auto" id="btn_vazio" name="btn_vazio">Produções vazias</button>
+                    <button type="button" class="uk-button uk-button_default uk-width-auto" id="btn_unitaria" name="btn_unitaria">Produções unitárias</button>
+                    <button type="button" class="uk-button uk-button_default uk-width-auto" id="btn_inuteis" name="btn_inuteis" disabled>Símbolos inúteis</button>
+                    <button type="button" class="uk-button uk-button-danger uk-width-auto" id="btn_simplificar" name="btn_simplificar">Simplificar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="uk-container uk-margin-top uk-margin-bottom">
+        <div class="uk-grid-small uk-child-width-1-4@m uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
+                    <h3 class="uk-card-title">Instruções <span uk-icon="icon: commenting"></span></h3>
+                    <p> <span class="uk-badge">N</span> Utilize letras em maiúsculo para não terminais.
+                        <br> <span class="uk-badge">t</span> Utilize letras em minúsculo para terminais.
+                        <br> <span class="uk-badge">-></span> Utilize para separar os não terminais das produções.
+                        <br> <span class="uk-badge">|</span> Utilize para separar as produções.
+                        <br> <span class="uk-badge">Σ</span> Utilize como vazio. </p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-default uk-card-small uk-card-body uk-card-hover">
+                    <h3 class="uk-card-title">Exemplo <span uk-icon="icon: list"></span></h3>
+                    <p>J->aABcD|aBcA|bDc
+                        <br>A->bAbD|bb|Σ
+                        <br>B->bDaA|bBBa|bDba|ba|b
+                        <br>D->bB|Σ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/LF.js"></script>
+</body>
+
+</html>
