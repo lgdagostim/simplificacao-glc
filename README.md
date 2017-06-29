@@ -2,8 +2,10 @@
 ---
 ##### Atividades desenvolvidas pelo código:
 - [x] Eliminação de produções vazias.  
+    - Funcionando **ok**.
 - [x] Eliminação de produções unitárias.  
-- [ ] Eliminação de símbolos inúteis
+    - Funcionando **ok**.
+- [ ] Eliminação de símbolos inúteis.
     - Eliminação de símbolos inúteis não foi desenvolvida.
 ---
 ### Instruções:
