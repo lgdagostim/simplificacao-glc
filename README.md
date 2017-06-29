@@ -1,12 +1,11 @@
 ## Implementação em **JavaScript** para simplificação de uma gramática livre de contexto **(GLC)**.
----
 ##### Atividades desenvolvidas pelo código:
 - [x] Eliminação de produções vazias.  
     - Funcionando **ok**.
 - [x] Eliminação de produções unitárias.  
     - Funcionando **ok**.
 - [ ] Eliminação de símbolos inúteis.
-    - Eliminação de símbolos inúteis não foi desenvolvida.
+    - **Não desenvolvido.**
 ---
 ### Instruções:
 > Utilizar letras em maíusculo para **não terminais**;  
